@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const site = 'http://localhost:3001';
+// export const site = 'http://localhost:3001';
+export const site = 'https://mun-chai-backend.onrender.com/';
 
 const endpoints = {
   placed: `${site}/api/v2/placed`,
@@ -55,4 +56,4 @@ function fetchDataFromAllEndpoints() {
 
 // Export the fetchDataFromAllEndpoints function so you can use it in other files
 export { fetchDataFromAllEndpoints };
-console.log(fetchDataFromAllEndpoints)
+// console.log(fetchDataFromAllEndpoints)
