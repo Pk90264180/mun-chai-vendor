@@ -1,4 +1,4 @@
-import { FC } from "react";
+// import { FC } from "react";
 import { Button, ButtonProps, styled, Typography } from "@mui/material";
 import Timer from "../timer/Timer";
 

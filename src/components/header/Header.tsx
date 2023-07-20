@@ -8,9 +8,9 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 const Header: FC<HeaderProps> = ({ title, count, logo, rejectLink, refundLink }: HeaderProps) => {
 
     const navigate = useNavigate();
-    function handleDelete() {
-        alert('You clicked the delete icon.'); // eslint-disable-line no-alert
-      }
+    // function handleDelete() {
+    //     alert('You clicked the delete icon.'); // eslint-disable-line no-alert
+    //   }
     return (
         
         <div className='headerMenu'>

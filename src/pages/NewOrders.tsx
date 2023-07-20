@@ -6,16 +6,16 @@ import Orders from '../components/orders/Orders';
 // import { NewOrdersData, RejectedOrdersData } from "../menu";
 import Header from '../components/header/Header';
 // import RejectedOrders from "./RejectedOrders";
-import { Link, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useNavigate } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 
 const NewOrders: FC = () => {
   const navigate = useNavigate();
-  let DataOrder: any = useSelector((state: any) => state.order);
-  let NewOrdersDataAll: any = DataOrder[0].NewOrdersData;
+  // let DataOrder: any = useSelector((state: any) => state.order);
+  // let NewOrdersDataAll: any = DataOrder[0].NewOrdersData;
   const buttons: BoolButtons = {
     reject: true,
     accept: true,
@@ -49,7 +49,7 @@ const NewOrders: FC = () => {
     return <div>Loading...</div>;
   }
   // Destructure the data object to obtain separate variables for each option
-  const { placed, accepted, delivered, rejected, refunded } = fetchedData;
+  const { placed } = fetchedData;
   // ===================================================================================================
   return (
     <Box>

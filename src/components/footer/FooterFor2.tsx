@@ -1,8 +1,8 @@
-import { FC , useEffect } from "react";
-import {Link, Stack,Typography } from "@mui/material";
+import { FC  } from "react";
+import { Stack,Typography } from "@mui/material";
 import './FooterFor2.css';
-import { useNavigate } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
 
 

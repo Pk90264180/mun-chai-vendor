@@ -24,7 +24,7 @@ const RefundedOrders: FC = () => {
     return <div>Loading...</div>;
   }
   // Destructure the data object to obtain separate variables for each option
-  const { placed, accepted, delivered, rejected, refunded } = fetchedData;
+  const { refunded } = fetchedData;
   // ===================================================================================================
 
   const buttons: BoolButtons = {

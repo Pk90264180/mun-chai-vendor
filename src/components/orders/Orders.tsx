@@ -20,7 +20,7 @@ import AcceptButton from '../buttons/AcceptButton';
 import Mov2DeliveredButton from '../buttons/Mov2DeliveredButton';
 import OrderCollectedButton from '../buttons/OrderCollectedButton';
 import OrderRejectedButton from '../buttons/OrderRejectedButton';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import RefundButton from '../buttons/RefundButton';
 import OrderRefundedButton from '../buttons/OrderRefundedButton';
 
@@ -33,7 +33,7 @@ import { useLocation } from 'react-router-dom';
 const socket = io(`${site}`);
 const Orders: FC<Props> = ({ orders, buttons }: Props) => {
   const history = useLocation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const host = history.pathname;
 
   //====================================================================================================
@@ -53,13 +53,13 @@ const Orders: FC<Props> = ({ orders, buttons }: Props) => {
   }
 
   // Destructure the data object to obtain separate variables for each option
-  const { placed, accepted, delivered, rejected, refunded } = fetchedData;
+  const { placed } = fetchedData;
   // ===================================================================================================
 
   let AcceptedOrdersData: any = [...placed];
   let DeliveredOrdersData: any = [];
   let RejectedOrdersData: any = [];
-  let RefundOrdersData: any = [];
+  // let RefundOrdersData: any = [];
 
   const handleAccept = (id: any) => {
     localStorage.setItem('id', JSON.stringify(id));
