@@ -1,0 +1,171 @@
+/*  Importing Files */
+
+body {
+  width: 98;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* .Image-Parent-div {
+               display: 'flex'!important;
+                     text-align: 'center'!important;
+                         width: '100%'!important;
+            align-items: 'center'!important;
+            justify-content: 'center'!important;
+} */
+
+/* .tablebody {
+  
+  
+} */
+
+/* .tablecontainer{
+  background-color: rgb(27, 71, 61);
+} */
+
+code {
+  font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+  font-family: "DroidSans-Bold";
+  src: local("DroidSans-Bold"),
+   url("./Fonts/DroidSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "DroidSans";
+  src: local("DroidSans"),
+    url("./Fonts/DroidSans.ttf") format("truetype");
+  font-weight: normal;
+}
+
+/* Variables  */
+
+:root{
+  --margin: 0px 0px 0px 0px;
+  --LogoTextFontSize : 32px;
+  --headingFontSize : 12px;
+  --heading2FontSize : 24px;
+  --buttonFontSize : 12px;
+  --subtitleFontSize : 12px;
+  --body1FontSize : 12px;
+  --body2FontSize : 12px;
+
+  --letterSpacing : 1.5px;
+
+  --lightGray : #EFEFEF;
+  --darkGray : #666666;
+  --lightBlack : #343434;
+  --darkBlack : #211F20;
+}
+
+/*  Predefined Class  */
+
+.Logo-Text{
+  font-family: "DroidSans-Bold" !important;
+  font-size: var(--LogoTextFontSize)!important;
+  font-weight: bolder !important;
+}
+
+.Heading-Text{
+  font-family: "DroidSans-Bold" !important;
+  font-size: var(--headingFontSize)!important;
+  font-weight: bold !important;
+}
+
+.Heading-chip{
+  font-family: "DroidSans-Bold" !important;
+  font-size: var(--headingFontSize)!important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+  letter-spacing: 1.5px;
+}
+
+.Button-Text{
+  font-family: "DroidSans-Bold" !important;
+  font-size: var(--headingFontSize) !important;
+  font-weight: bold !important;
+  letter-spacing: var(--letterSpacing) !important;
+}
+
+.Heading2-Text{
+  /* font-family: "DroidSans-Bold" !important; */
+  font-size: var(--heading2FontSize) !important;
+  font-weight: 700 !important;
+  font-family: 'Inter'!important ;
+  text-transform: uppercase;
+  
+  text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #000000;
+  
+
+}
+
+
+.topstack-Text{
+  font-family: "DroidSans-Bold" !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  margin: 3px 0px 0px 0px !important;
+  letter-spacing: 1.5px;
+}
+
+
+
+/* .tablebody{
+  background-color: red;
+} */
+
+/* .Heading3-Text{
+  font-family: "DroidSans-Bold" !important;
+  font-size: var(--heading2FontSize) !important;
+  font-weight: 700 !important;
+  margin-right: 222px;
+} */
+
+.Subtitle-Text{
+  font-family: "DroidSans" !important;
+  font-size: var(--subtitleFontSize) !important;
+  font-weight: normal !important;
+}
+
+.Body1-Text{
+  font-family: 'Inter';
+  font-size: var(--body1FontSize) !important;
+  font-weight: 500 !important;
+}
+
+.Body2-Text{
+  font-family: 'Inter' !important;
+  font-size: var(--body2FontSize) !important;
+  font-weight: 400 !important;
+}
+@media only screen and (max-width: 520px){
+  .MuiTableCell-sizeMedium{
+    font-size:11px !important;
+  }
+  .topstack-Text {
+    margin: 3px 0px 0px 0px !important;
+  }
+  #footer2 svg{
+    margin: 0 !important;
+  }
+  .Heading2-Text{
+    font-size: 16px !important;
+  }
+  .Body2-Text{
+    margin: 20px 10px 0 10px !important;
+  }
+  /* .headerMenu{
+    padding: 15px 10px 0 10px !important;
+  } */
+  .headerInside{
+    padding: 15px 10px 0 10px !important;
+  }
+}
+

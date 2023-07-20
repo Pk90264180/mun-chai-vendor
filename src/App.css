@@ -1,0 +1,40 @@
+.App {
+    max-width: 83%;
+    margin: auto;
+    
+}
+.TitleBoxSec{
+    max-width: 768px;
+    margin: auto;
+}
+.middleBox{
+    max-width: 768px;
+    margin: auto;
+}
+.headerMenu{
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+.html{
+    position: relative;
+    min-height: 100%;
+}
+.body{
+    margin: 0 0 100px;
+}
+#footer2{
+    margin-top: 18px;  
+    height:25px ;
+    
+}
+@media only screen and (max-width: 900px){
+    .App {
+        max-width: 768px;
+        margin: auto;
+        
+    }
+}
+
+
